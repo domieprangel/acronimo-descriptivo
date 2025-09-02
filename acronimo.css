@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border-section: 1px solid #726aee;
+  --border-dialog: 3px solid #726aee;
+
+  --color-fondo-general: black;
+  --color-fondo-boton: white;
+  --color-fondo-dialog: black;
+  --color-fondo-tarjeta: black;
+  --color-fondo-hover-boton: yellow;
+
+  --color-hover-sombra: purple;
+
+  --color-letra-titulo: #63ef47;
+  --color-letra-acronimo: #63ef47;
+  --color-letra-general: white;
+  --color-letra-boton: black;
+  --color-letra-dialog: #63ef47;
+
+  --fuente-titulos: "Press Start 2P", system-ui;
+  --fuente-letra-acronimo: "Press Start 2P", system-ui;
+  --fuente-letra-dialog: "Press Start 2P", system-ui;
+  --fuente-texto: "Source Code Pro", monospace;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--color-fondo-general);
+  text-align: center;
+  color: var(--color-letra-general);
+  padding: 20px;
+}
+
+h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 2em;
+  color: var(--color-letra-titulo);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-family: var(--fuente-letra-acronimo);
+  color: var(--color-letra-acronimo);
+  font-size: 2.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  background-color: var(--color-fondo-tarjeta);
+  padding: 15px;
+  border: var(--border-section);
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 5px 5px 10px var(--color-hover-sombra);
+  transform: translateY(-5px);
+}
+
+img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+div {
+  width: 150px;
+}
+
+span {
+  color: var(--color-letra-general);
+  display: block;
+  margin-top: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--color-fondo-boton);
+  color: var(--color-letra-boton);
+
+  font-weight: bold;
+  text-align: center;
+
+}
+
+button:hover {
+  background-color: var(--color-fondo-hover-boton);
+}
+
+dialog {
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--color-fondo-dialog);
+  border: var(--border-dialog);
+  color: var(--color-letra-dialog);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+dialog p{
+  margin: 10px;
+}
+
+dialog::backdrop {
+  background: rgba(255, 255, 255, 0.7);
+}
+

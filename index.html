@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acrónimo: Dom</title>
+
+    <!-- Carga única de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="acronimo.css" />
+  </head>
+  <body>
+    <header id="encabezado">
+      <h1>El acrónimo que me describe</h1>
+      <p>Ejercicio para practicar HTML, CSS y un poco de JavaScript</p>
+    </header>
+    <main>
+      <section class="tarjeta">
+        <div>
+          <p>D</p>
+          <span>De Desarrollo web</span>
+        </div>
+        <img
+          src="./img/imagen-desarrollo.jpeg"
+          alt="Código en monitor"
+        />
+        <button type="button" class="abrirModal" data-id="desarrollo">Dato Curioso</button>
+      </section>
+
+      <section class="tarjeta">
+        <div>
+          <p>O</p>
+          <span>De Orientación a los detalles</span>
+        </div>
+        <img
+          src="./img/imagen-orientacion.jpeg"
+          alt="Rompecabezas en mesa"
+        />
+        <button type="button" class="abrirModal" data-id="detalle">Dato Curioso</button>
+      </section>
+
+      <section class="tarjeta">
+        <div>
+          <p>M</p>
+          <span>De Mentalidad de crecimiento</span>
+        </div>
+        <img
+          src="./img/imagen-estudio.jpg"
+          alt="Estudiante frente a computadora"
+        />
+        <button type="button" class="abrirModal" data-id="mentalidad">Dato Curioso</button>
+      </section>
+    </main>
+
+    <!-- Modal accesible -->
+    <dialog id="mi-modal">
+      <p></p>
+      <button type="button" id="cerrarModal">Cerrar</button>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
