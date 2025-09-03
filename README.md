@@ -12,7 +12,7 @@ El proyecto sirve como práctica de estructura semántica en HTML, manejo del DO
 ## Demostración
 
 <p align="center">
-  <img src="/img/interfaz.png" alt="Aplicación web con fondo negro y 4 tarjetas que contiene cada letra del acrónimo DOM. Cada letra tiene una palabra asociada, una imagen y un botón con la leyenda 'Dato curioso'" width="800"/>
+  <img src="img/read-me/interfaz.png" alt="Aplicación web con fondo negro y 4 tarjetas que contiene cada letra del acrónimo DOM. Cada letra tiene una palabra asociada, una imagen y un botón con la leyenda 'Dato curioso'" width="800"/>
 </p>
 
 ---
@@ -24,7 +24,7 @@ El proyecto sirve como práctica de estructura semántica en HTML, manejo del DO
    - Ejemplo: la D representa “Desarrollo web”.
    
      <p align="center">
-       <img src="img/ejemplo-tarjeta.png" alt="Tarjeta con la letra De de Desarrollo web" width="300"/>
+       <img src="img/read-me/ejemplo-tarjeta.png" alt="Tarjeta con la letra De de Desarrollo web" width="300"/>
      </p>
  
 2. **Abrir un dato curioso**  
@@ -32,12 +32,12 @@ El proyecto sirve como práctica de estructura semántica en HTML, manejo del DO
    - Se abrirá un modal mostrando un dato curioso relacionado con esa letra:
 
      <p align="center">
-       <img src="img/ejemplo-modal.png" alt="Modal con Dato Curioso: " width="300"/>
+       <img src="img/read-me/ejemplo-modal.png" alt="Modal con Dato Curioso: " width="300"/>
      </p>
 
 3. **Cerrar el modal**  
-   - Haz clic en el botón Cerrar dentro del modal.
-   - Apretar tecla Escape.
+   - Haz clic en el botón **Cerrar** dentro del modal.
+   - Apretar tecla **Escape**.
 ---
 
 ## Tecnologías usadas
